@@ -1,0 +1,8 @@
+**/.DS_Store
+dist
+node_modules
+source/app-components.js
+source/solution-builder-components.js
+!source/static/index/web.config
+yarn*.bat
+.vscode
