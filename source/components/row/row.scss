@@ -1,0 +1,29 @@
+.row {
+  &--default {
+    margin-bottom: 0;
+  }
+
+  &--small {
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: $break-at-sm) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &--medium {
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: $break-at-sm) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &--large {
+    margin-bottom: 4rem;
+
+    @media screen and (min-width: $break-at-sm) {
+      margin-bottom: 8rem;
+    }
+  }
+}
