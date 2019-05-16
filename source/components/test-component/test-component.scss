@@ -1,3 +1,4 @@
 .test-component {
-  background-color: aqua;
+  background-color: $background-color--dark;
+  box-shadow: 0.1rem 0.2rem $effect-color;
 }
