@@ -1,0 +1,31 @@
+.content {
+  margin-left: auto;
+  margin-right: auto;
+
+  &__inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &--default {
+    max-width: 77rem;
+  }
+
+  &--slim {
+    max-width: 69rem;
+  }
+
+  &--slimmer {
+    max-width: 57rem;
+  }
+
+  &--wide {
+    max-width: 87rem;
+
+    .content__inner--shifted {
+      @media screen and (min-width: 67rem) {
+        margin-left: 10%;
+      }
+    }
+  }
+}
