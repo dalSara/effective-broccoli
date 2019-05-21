@@ -10,7 +10,9 @@ const ArticleHero = ({ heading, image, text }) => (
     <Row theme={Row.themes.small}>
       <div className="article-hero">
         <Heading>{heading}</Heading>
-        <ResponsiveImage {...image} />
+        <div className="article-hero__image">
+          <ResponsiveImage {...image} />
+        </div>
         <div>{text}</div>
       </div>
     </Row>
