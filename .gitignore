@@ -6,3 +6,4 @@ source/solution-builder-components.js
 !source/static/index/web.config
 yarn*.bat
 .vscode
+/.idea/

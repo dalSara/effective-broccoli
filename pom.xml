@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.effectivebroccoli</groupId>
+  <artifactId>effective-broccoli</artifactId>
+
+  <!--
+      To change version in all modules, use:
+      mvn versions:set -DnewVersion=a.b.c
+   -->
+  <version>0.0.1-SNAPSHOT</version>
+
+  <inceptionYear>2019</inceptionYear>
+  <name>Effective Broccoli</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>backend</module>
+  </modules>
+
+</project>
