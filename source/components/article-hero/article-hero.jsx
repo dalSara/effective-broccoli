@@ -9,9 +9,9 @@ const ArticleHero = ({ heading, image, text }) => (
   <Content theme={Content.themes.slim}>
     <Row theme={Row.themes.small}>
       <div className="article-hero">
-        <Heading>{heading}</Heading>
+        <Heading level={1}>{heading}</Heading>
         <div className="article-hero__image-container">
-          <Image initialSize={200} {...image} />
+          <Image {...image} />
         </div>
         <div className="article-hero__text-container">{text}</div>
       </div>

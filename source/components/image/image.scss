@@ -1,3 +1,7 @@
 .image {
   display: block;
+  height: auto;
+  width: auto;
+  max-height: inherit;
+  max-width: 100%;
 }
