@@ -5,15 +5,20 @@ import Image from '../image';
 import Content from '../content';
 import Row from '../row';
 
-const ArticleHero = ({ heading, image, text }) => (
+const ArticleHero = ({ heading, image, credit, creditLabel }) => (
   <Content theme={Content.themes.slim}>
     <Row theme={Row.themes.small}>
       <div className="article-hero">
         <Heading level={1}>{heading}</Heading>
         <div className="article-hero__image-container">
           <Image {...image} />
+          {credit && (
+            <div className="article-hero__credit-wrapper">
+              <span className="article-hero__credit-label">{creditLabel}</span>
+              <span>{credit}</span>
+            </div>
+          )}
         </div>
-        <div className="article-hero__text-container">{text}</div>
       </div>
     </Row>
   </Content>
@@ -22,7 +27,8 @@ const ArticleHero = ({ heading, image, text }) => (
 ArticleHero.propTypes = {
   heading: PropTypes.string,
   image: PropTypes.object,
-  text: PropTypes.string
+  credit: PropTypes.string,
+  creditLabel: PropTypes.string
 };
 
 export default ArticleHero;
