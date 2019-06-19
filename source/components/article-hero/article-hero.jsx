@@ -7,7 +7,7 @@ import Row from '../row';
 
 const ArticleHero = ({ heading, image, credit, creditLabel }) => (
   <Content theme={Content.themes.slim}>
-    <Row theme={Row.themes.small}>
+    <Row theme={Row.themes.medium}>
       <div className="article-hero">
         <Heading level={1}>{heading}</Heading>
         <div className="article-hero__image-container">

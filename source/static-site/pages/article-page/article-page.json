@@ -7,5 +7,12 @@
     },
     "creditLabel": "Photo by",
     "credit": "Sara"
+  },
+  "info": {
+    "addresses": ["tuffagatan 80", "137 56"],
+    "category": "murder spot",
+    "city": "Oslo",
+    "country": "Norway",
+    "website": "website"
   }
 }
