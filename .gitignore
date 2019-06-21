@@ -7,3 +7,5 @@ source/solution-builder-components.js
 yarn*.bat
 .vscode
 /.idea/
+
+*.iml
