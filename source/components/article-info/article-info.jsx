@@ -8,12 +8,16 @@ const ArticleInfo = ({ addresses, category, city, country, website }) => (
   <Content theme={Content.themes.wide}>
     <Row theme={Row.themes.small}>
       <div className="article-info">
-        <span>{category}</span>
-        <span>{country}</span>
+        <span className="article-info__category">{category}</span>
+        <span className="article-info__country">{country}</span>
         {addresses &&
-          addresses.map((address, index) => <span key={index}>{address}</span>)}
-        <span>{city}</span>
-        <Link>{website}</Link>
+          addresses.map((address, index) => (
+            <span className="article-info__adress" key={index}>
+              {address}
+            </span>
+          ))}
+        <span className="article-info__city">{city}</span>
+        <Link className="article-info__link">{website}</Link>
       </div>
     </Row>
   </Content>

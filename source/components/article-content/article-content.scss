@@ -1,0 +1,60 @@
+.article-content {
+  $self: &;
+  $primary-width: 65%;
+  $secondary-width: 25%;
+  $content-gutter: (100% - ($primary-width + $secondary-width));
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+
+  @media screen and (min-width: $break-at-lg) {
+    margin-top: $gutter--large;
+    flex-direction: row;
+  }
+
+  &__primary {
+    width: 100%;
+    order: 2;
+
+    > * {
+      margin-bottom: $gutter;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media screen and (min-width: $break-at-lg) {
+        margin-bottom: $gutter--large;
+      }
+    }
+  }
+
+  &__secondary {
+    order: 1;
+    margin-bottom: $gutter--large;
+
+    @media screen and (min-width: $break-at-lg) {
+      margin-bottom: 0;
+    }
+
+    > * {
+      margin-bottom: $gutter--large;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: $break-at-lg) {
+      display: block;
+      flex: 0 0 $secondary-width;
+      margin-left: $content-gutter;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: $secondary-width;
+      order: 2;
+    }
+  }
+}

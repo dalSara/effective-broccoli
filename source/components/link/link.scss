@@ -2,6 +2,13 @@
   text-decoration: none;
 
   &--theme-default {
+    text-decoration: underline;
+    text-decoration-color: $effect-color;
+
+    &:focus,
+    &:hover {
+      color: $effect-color;
+    }
   }
 
   &--theme-underlined {
