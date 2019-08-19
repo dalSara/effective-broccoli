@@ -1,3 +1,3 @@
-import VisuallyHidden from "./visually-hidden";
+import VisuallyHidden from './visually-hidden';
 
 export default VisuallyHidden;
