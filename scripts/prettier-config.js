@@ -2,6 +2,6 @@
 const eslintrc = require('../.eslintrc.json');
 
 module.exports = Object.assign(
-  { parser: 'babylon' },
+  { parser: 'babel' },
   eslintrc.rules['prettier/prettier'][1]
 );
