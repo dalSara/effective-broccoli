@@ -17,18 +17,23 @@ const ArticleInfo = ({ addresses, category, city, country, website }) => (
             </span>
           ))}
         <span className="article-info__city">{city}</span>
-        <Link className="article-info__link">{website}</Link>
+        <Link className="article-info__link" href={website.text}>
+          {website.text}
+        </Link>
       </div>
     </Row>
   </Content>
 );
-//TODO fix the link data
+
 ArticleInfo.propTypes = {
   addresses: PropTypes.arrayOf(PropTypes.string),
   category: PropTypes.string,
   city: PropTypes.string,
   country: PropTypes.string,
-  website: PropTypes.string
+  website: PropTypes.shape({
+    href: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired
+  })
 };
 
 export default ArticleInfo;

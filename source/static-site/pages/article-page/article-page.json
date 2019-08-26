@@ -13,6 +13,9 @@
     "category": "murder spot",
     "city": "Oslo",
     "country": "Norway",
-    "website": "website"
+    "website": {
+      "text": "murder-spot",
+      "href": "#"
+    }
   }
 }

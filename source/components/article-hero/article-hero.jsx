@@ -26,7 +26,10 @@ const ArticleHero = ({ heading, image, credit, creditLabel }) => (
 
 ArticleHero.propTypes = {
   heading: PropTypes.string,
-  image: PropTypes.object,
+  image: PropTypes.shape({
+    alt: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired
+  }),
   credit: PropTypes.string,
   creditLabel: PropTypes.string
 };
