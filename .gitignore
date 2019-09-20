@@ -4,8 +4,6 @@ node_modules
 source/static-site/pages/paths.js
 source/static-site/pages/pages.js
 source/app-components.js
-source/solution-builder-components.js
-!source/static/index/web.config
 yarn*.bat
 .vscode
 /.idea/

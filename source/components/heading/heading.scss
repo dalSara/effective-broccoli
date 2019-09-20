@@ -1,6 +1,9 @@
 .heading {
   &--level-1 {
-    font-size: 4rem;
+    font-size: $large-font;
+    @media screen and (min-width: $break-at-md) {
+      font-size: $huge-font;
+    }
   }
 
   &--level-2 {

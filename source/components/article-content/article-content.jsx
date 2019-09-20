@@ -1,9 +1,12 @@
 /* eslint-disable react/no-multi-comp*/
 import React from 'react';
 import PropTypes from 'prop-types';
+import Content from '../content';
 
 const ArticleContent = ({ children }) => (
-  <div className="article-content">{children}</div>
+  <Content theme={Content.themes.wide}>
+    <div className="article-content">{children}</div>
+  </Content>
 );
 
 const ArticleContentPrimary = ({ children }) => (
