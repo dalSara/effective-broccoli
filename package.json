@@ -46,7 +46,7 @@
     "lodash": "^4.17.11",
     "lodash-webpack-plugin": "^0.11.5",
     "node-sass": "^4.5.1",
-    "null-loader": "^0.1.1",
+    "null-loader": "^3.0.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.9.2",
     "prop-types": "^15.5.7",
